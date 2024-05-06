@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shozon Roy - Developer Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <script src="particles.min.js"></script>
+ <meta name="author" content="Shozon Roy">
+<meta name="description" content="Shozon Roy's developer profile showcasing expertise in software development, web design, and innovative solutions.">
+<meta name="keywords" content="Shozon Roy, developer, software development, web design, innovative solutions">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#ffffff">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@shozonroy">
+<meta name="twitter:title" content="Shozon Roy - Developer Profile">
+<meta name="twitter:description" content="Explore Shozon Roy's developer profile showcasing expertise in software development, web design, and innovative solutions.">
+<meta name="twitter:image" content="https://google.com/shozonroy_profile.jpg">
+<meta property="og:title" content="Shozon Roy - Developer Profile">
+<meta property="og:description" content="Explore Shozon Roy's developer profile showcasing expertise in software development, web design, and innovative solutions.">
+<meta property="og:image" content="https://google.com/shozonroy_profile.jpg">
+<meta property="og:url" content="https://google.com/shozonroy">
+<meta property="og:type" content="profile">
+
+<style>
+
+  html,body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height:100%;
+    }
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #1e032f, #13061b 42%, #120b27);
+}
+
+    /* Dark Mode */
+  .dark-mode body {
+    background-color: #121212;
+    color: #fff;
+    
+  }
+  
+  .dark-mode .profile-container {
+    background-color: #333;
+    
+  }
+  
+.dark-mode .profile-name,
+.dark-mode .username,
+.dark-mode .social-icons a,
+.dark-mode .button,
+.dark-mode .detail-text,
+.dark-mode .a-link,
+.dark-mode .fa-facebook,
+.dark-mode .fa-instagram,
+.dark-mode .fa-twitter,
+.dark-mode .fa-telegram,
+.dark-mode .fa-github,
+.dark-mode .fa-sun,
+.dark-mode .fa-moon,
+.dark-mode .fa-check-circle,
+.dark-mode .fa-graduation-cap,
+.dark-mode .fa-home,
+.dark-mode .fa-map-marker-alt,
+.dark-mode .fa-heart,
+.dark-mode .fa-calendar-alt,
+.dark-mode .fa-link,
+.dark-mode .fa-envelope,
+.dark-mode .fa-phone,
+.dark-mode .fa-download,
+.dark-mode .fa-snapchat,
+.dark-mode .fa-check-circle {
+  color: #ccc;
+}
+
+.dark-mode .social-icons a:hover {
+  color: #1e87c9;
+}
+
+.dark-mode .follow-button,
+.dark-mode .send-message-button {
+  background-color: #160527;
+  color: #fff;
+}
+
+.dark-mode .dark-light-toggle {
+  color: #fff;
+}
+
+.dark-mode .dark-light-toggle:hover {
+  color: #1e87c9;
+}
+
+  .profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: box-shadow 0.3s;
+    
+  }
+  .profile-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background-color: #ccc; /* Placeholder color */
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2oRq7VcoBDVr1IJo5jd9sJU2UjAwDn5h2HKP7a6VW4eX_Z8QFF6CNkeKRml7OV4hV5l66HiW76sOjWerOkZm_NtuQEPv090L8Cdv9nr8GmDLjGfF5Dhvzel2AThf9AG_cpGD1nnFseSGiq9-le0w6_UTV_2GPDJqmUGkooU8vTg6dcg/s220/Polish_20240503_111339966.png'); /* Replace with your profile image */
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #fff; /* White border around the picture */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .profile-name {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+  }
+  .username {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .social-icons a {
+    color: #210842;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  .social-icons a:hover {
+    color: #160527; /* Darker color on hover */
+  }
+  .buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #210842;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s;
+    outline: none; /* Remove outline on button click */
+    position: relative;
+    overflow: hidden;
+  }
+  .button:hover {
+    color: #160527; /* Darker color on hover */
+    transform: translateY(-2px); /* Move button slightly up on hover */
+  }
+  .button i {
+    position: relative;
+    z-index: 1;
+  }
+  .follow-button, .send-message-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #210842;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    outline: none; /* Remove outline on button click */
+  }
+  .follow-button:hover, .send-message-button:hover {
+    background-color: #160527;
+    transform: translateY(-2px); /* Move button slightly up on hover */
+  }
+  /* Additional CSS for button hover effect */
+  .follow-button:hover, .send-message-button:hover {
+    transform: translateY(-2px); /* Move button slightly up on hover */
+  }
+  .profile-details {
+    margin-top: 20px;
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .detail-icon {
+    font-size: 24px;
+    color: #210842;
+    margin-right: 10px;
+  }
+  .detail-text {
+    font-size: 16px;
+    color: #333;
+  }
+   .underline {
+    position: absolute;
+    bottom: 40;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px; /* Change height to 1px */
+    background-color: #210842; /* Change color */
+  }
+  .a-link {
+    color:#121321;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .a:hover {
+    color: #1e87c9;
+  }
+  /* Dark/Light Mode Toggle */
+  .dark-light-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .dark-light-toggle:hover {
+    color: #1e87c9;
+  }
+  .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Add this line */
+}
+
+.profile-container {
+  /* Existing styles */
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+    
+</style>
+</head>
+<body>
+<canvas class="background"> </canvas>
+<div class="profile-container">
+  <div class="profile-picture"></div>
+  <div class="profile-name">Shozon Roy <i class="fas fa-check-circle" style="color: #1ed760;"></i></div>
+  <div class="username">@shozonroy.ofc</div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/shozon.roy2"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/shozon_roy"><i class="fab fa-instagram"></i></a>
+    <a href="https://shozonroy.blogspot.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://t.me/shozonroy2"><i class="fab fa-telegram"></i></a>
+    <a href="https://github.com/Shozon-Roy"><i class="fab fa-github"></i></a>
+  </div>
+  <div class="buttons">
+    <button class="follow-button" onclick="toggleFollow()">Follow</button>
+    <button class="send-message-button" onclick="openMessagePopup()">Send Message</button>
+    <button class="button download-button"><i class="fas fa-download"></i></button>
+  </div>
+   <div class="underline"></div>
+   <br />
+    <!-- Dark/Light Mode Toggle -->
+  <div class="dark-light-toggle" onclick="toggleDarkMode()">
+    <i class="fas fa-sun"></i> <!-- Light mode icon -->
+    <i class="fas fa-moon" style="display: none;"></i> <!-- Dark mode icon -->
+  </div>
+  <div class="profile-details">
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="detail-text">Studies at <a class="a-link" href="#"> <b>Uttaron Polytechnic Institute </b> </a>  </div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="detail-text">Studies Diploma in civil engineering at <a class="a-link" href="#"> <b>Uttaron Polytechnic Institute </b> </a> </div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-home"></i></div>
+      <div class="detail-text">Lives in <a class="a-link" href="#"><b>Dinajpur  </b></a></div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="detail-text">From<a class="a-link" href="#"> <b>Dinajpur  </b> </a> </div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-heart"></i></div>
+      <div class="detail-text"> Single </div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-calendar-alt"></i></div>
+      <div class="detail-text">Joined on January 2020</div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-link"></i></div>
+      <div class="detail-text">
+        <a class="a-link" href="https://t.me/shozonroy2"> <b>t.me/shozonroy2  </b> </a></div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-link"></i></div>
+      <div class="detail-text">
+        <a class="a-link" href="https://shozonroy.blogspot.com"> <b>shozonroy.blogspot.com </b> </a></div>
+      
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+      <div class="detail-text">  <a class="a-link" href="mailto:shozonroy2@gmail"> <b>shozonroy2@gmail.com   </b> </a></div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fas fa-phone"></i></div>
+       <div class="detail-text"> <a class="a-link" href="tel:+18502167857">
+        <b>+1 850-216-7857</b> </a></div>
+    </div>
+    
+    <div class="detail">
+      <div class="detail-icon"><i class="fab fa-instagram"></i></div>
+      <div class="detail-text"> <a class="a-link" href="https://www.instagram.com/shozon_roy">
+        <b>/shozon_roy</b> </a></div>
+    </div>
+    <div class="detail">
+      <div class="detail-icon"><i class="fab fa-github"></i></div>
+      <div class="detail-text"> <a class="a-link" href="https://github.com/Shozon-Roy">
+        <b>/Shozon-Roy</b> </a></div>
+    </div>
+    
+    <div class="detail">
+      <div class="detail-icon"><i class="fab fa-snapchat"></i></div>
+      <div class="detail-text"> <a class="a-link" href="https://www.snapchat.com/add/shozonroy?share_id=dmG86FrntyI&locale=en-US">
+        <b>/shozon.roy</b> </a></div>
+    </div>
+ 
+  </div>
+     <div class="underline"></div>
+   
+ 
+</div>
+
+<script>
+  function toggleFollow() {
+    var followButton = document.querySelector('.follow-button');
+    if (followButton.textContent === 'Follow') {
+      followButton.textContent = 'Following';
+    } else {
+      followButton.textContent = 'Follow';
+    }
+  }
+
+  function openMessagePopup() {
+    // Code to open a message popup goes here
+    // You can use modal libraries like Bootstrap modal or create a custom modal
+    // For simplicity, I'm just logging a message here
+    console.log('Open message popup');
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const darkLightToggle = document.querySelector('.dark-light-toggle');
+    const sunIcon = darkLightToggle.querySelector('.fa-sun');
+    const moonIcon = darkLightToggle.querySelector('.fa-moon');
+    
+    if (document.body.classList.contains('dark-mode')) {
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'inline';
+    } else {
+      sunIcon.style.display = 'inline';
+      moonIcon.style.display = 'none';
+    }
+  }
+</script>
+
+ <script type="text/javascript" charset="utf-8">
+   window.onload = function () {
+  Particles.init({
+    selector: ".background"
+  });
+};
+
+var particles = Particles.init({
+  selector: ".background",
+  color: ["#FF0099", "#00FE42"],
+  connectParticles: true,
+  responsive: [
+    {
+      breakpoint: 765,
+      options: {
+        color: ["#fff", "#FF0099", "#00ffff","#5200CE","#FE1807"," #00FE42"],
+        maxParticles: 100,
+        connectParticles: false
+      }
+    }
+  ]
+});
+
+
+ </script>
+</body>
+</html>
